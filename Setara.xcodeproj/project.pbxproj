@@ -14,6 +14,7 @@
 		F7E8818C2B0F3D8D00828CA0 /* Setara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7E8818A2B0F3D8D00828CA0 /* Setara.xcdatamodeld */; };
 		F7E8818E2B0F3D8F00828CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E8818D2B0F3D8F00828CA0 /* Assets.xcassets */; };
 		F7E881912B0F3D8F00828CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E8818F2B0F3D8F00828CA0 /* LaunchScreen.storyboard */; };
+		F7E8819E2B0F4EF800828CA0 /* AddParticipantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E8819D2B0F4EF800828CA0 /* AddParticipantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F7E8818D2B0F3D8F00828CA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7E881902B0F3D8F00828CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7E881922B0F3D8F00828CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E8819D2B0F4EF800828CA0 /* AddParticipantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParticipantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,57 @@
 		F7E881802B0F3D8D00828CA0 /* Setara */ = {
 			isa = PBXGroup;
 			children = (
-				F7E881812B0F3D8D00828CA0 /* AppDelegate.swift */,
-				F7E881832B0F3D8D00828CA0 /* SceneDelegate.swift */,
-				F7E881852B0F3D8D00828CA0 /* ViewController.swift */,
-				F7E881872B0F3D8D00828CA0 /* Main.storyboard */,
+				F7E8819C2B0F4ECA00828CA0 /* Model */,
+				F7E8819B2B0F4EC000828CA0 /* Controller */,
+				F7E8819A2B0F4EB800828CA0 /* Views */,
+				F7E881992B0F4E5300828CA0 /* CoreData */,
+				F7E881982B0F4E3F00828CA0 /* Core */,
 				F7E8818D2B0F3D8F00828CA0 /* Assets.xcassets */,
-				F7E8818F2B0F3D8F00828CA0 /* LaunchScreen.storyboard */,
-				F7E881922B0F3D8F00828CA0 /* Info.plist */,
-				F7E8818A2B0F3D8D00828CA0 /* Setara.xcdatamodeld */,
 			);
 			path = Setara;
+			sourceTree = "<group>";
+		};
+		F7E881982B0F4E3F00828CA0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F7E881922B0F3D8F00828CA0 /* Info.plist */,
+				F7E881872B0F3D8D00828CA0 /* Main.storyboard */,
+				F7E8818F2B0F3D8F00828CA0 /* LaunchScreen.storyboard */,
+				F7E881832B0F3D8D00828CA0 /* SceneDelegate.swift */,
+				F7E881812B0F3D8D00828CA0 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F7E881992B0F4E5300828CA0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F7E8818A2B0F3D8D00828CA0 /* Setara.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F7E8819A2B0F4EB800828CA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7E8819B2B0F4EC000828CA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7E881852B0F3D8D00828CA0 /* ViewController.swift */,
+				F7E8819D2B0F4EF800828CA0 /* AddParticipantViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7E8819C2B0F4ECA00828CA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E881862B0F3D8D00828CA0 /* ViewController.swift in Sources */,
+				F7E8819E2B0F4EF800828CA0 /* AddParticipantViewController.swift in Sources */,
 				F7E881822B0F3D8D00828CA0 /* AppDelegate.swift in Sources */,
 				F7E881842B0F3D8D00828CA0 /* SceneDelegate.swift in Sources */,
 				F7E8818C2B0F3D8D00828CA0 /* Setara.xcdatamodeld in Sources */,
@@ -298,12 +342,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LH73CAYKFH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Setara/Info.plist;
+				INFOPLIST_FILE = Setara/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,12 +370,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LH73CAYKFH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Setara/Info.plist;
+				INFOPLIST_FILE = Setara/Core/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
